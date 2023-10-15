@@ -8,7 +8,7 @@ type CustomThemeProviderProps = {
 };
 
 // https://chakra-ui.com/docs/styled-system/customize-theme
-const theme = extendTheme({
+export const theme = extendTheme({
   colors: CustomColorOptions,
   components: CustomComponentOptions,
   styles: CustomStyleOptions,
