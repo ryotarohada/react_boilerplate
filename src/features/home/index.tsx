@@ -1,7 +1,7 @@
 export const HomeFeature = () => {
-  return (
-    <>
-      <h1>HomeFeature</h1>
-    </>
-  )
+	return (
+		<>
+			<h1>HomeFeature</h1>
+		</>
+	)
 }

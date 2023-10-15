@@ -4,16 +4,16 @@ import { CustomComponentOptions } from '@/theme/components'
 import { CustomStyleOptions } from '@/theme/styles'
 
 type CustomThemeProviderProps = {
-  children: React.ReactNode
+	children: React.ReactNode
 }
 
 // https://chakra-ui.com/docs/styled-system/customize-theme
 export const theme = extendTheme({
-  colors: CustomColorOptions,
-  components: CustomComponentOptions,
-  styles: CustomStyleOptions,
+	colors: CustomColorOptions,
+	components: CustomComponentOptions,
+	styles: CustomStyleOptions,
 })
 
 export function CustomThemeProvider({ children }: CustomThemeProviderProps) {
-  return <ChakraProvider theme={theme}>{children}</ChakraProvider>
+	return <ChakraProvider theme={theme}>{children}</ChakraProvider>
 }

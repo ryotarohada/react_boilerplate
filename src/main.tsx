@@ -6,16 +6,16 @@ import { APP_URLS } from '@/constants/appUrls'
 import { CustomThemeProvider } from '@/theme'
 
 const router = createBrowserRouter([
-  {
-    path: APP_URLS.HOME,
-    element: <HomePage />,
-  },
+	{
+		path: APP_URLS.HOME,
+		element: <HomePage />,
+	},
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <CustomThemeProvider>
-      <RouterProvider router={router} />
-    </CustomThemeProvider>
-  </React.StrictMode>,
+	<React.StrictMode>
+		<CustomThemeProvider>
+			<RouterProvider router={router} />
+		</CustomThemeProvider>
+	</React.StrictMode>,
 )

@@ -4,10 +4,10 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
-  root: './src',
-  publicDir: 'assets',
-  server: {
-    port: 3000,
-  },
+	plugins: [react(), tsconfigPaths()],
+	root: './src',
+	publicDir: 'assets',
+	server: {
+		port: 3000,
+	},
 })
