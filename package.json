@@ -9,7 +9,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "gen:page": "plop page",
+    "gen:component": "plop component"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.1",
@@ -39,6 +41,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.15",
+    "plop": "^4.0.0",
     "storybook": "^7.4.6",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
