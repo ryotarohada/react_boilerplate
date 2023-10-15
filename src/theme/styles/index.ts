@@ -3,4 +3,4 @@ export const CustomStyleOptions = {
   global: {
     body: {},
   },
-};
+}

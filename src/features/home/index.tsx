@@ -3,5 +3,5 @@ export const HomeFeature = () => {
     <>
       <h1>HomeFeature</h1>
     </>
-  );
-};
+  )
+}
