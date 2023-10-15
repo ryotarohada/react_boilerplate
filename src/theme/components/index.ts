@@ -1,2 +1,2 @@
-// https://chakra-ui.com/docs/styled-system/customize-theme#customizing-global-styles
+// https://chakra-ui.com/docs/styled-system/customize-theme#customizing-single-components
 export const CustomComponentOptions = {};
