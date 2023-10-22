@@ -1,5 +1,12 @@
 import fs from 'fs'
 
+// @plop-main-page-import - Please don't delete. Comments for automatic addition by plop.
+const APPEND_PATTERN = /\/\/ @plop - Please don't delete. Comments for automatic addition by plop./
+const APPEND_PATTERN_MAIN_ROUTE =
+	/\/\/ @plop-main-route - Please don't delete. Comments for automatic addition by plop./
+const APPEND_PATTERN_MAIN_PAGE_IMPORT =
+	/\/\/ @plop-main-page-import - Please don't delete. Comments for automatic addition by plop./
+
 const componentKinds = fs.readdirSync('src/components').map((kind) => {
 	return {
 		name: kind,
@@ -42,8 +49,19 @@ export default function (plop) {
 				type: 'append',
 				path: 'src/constants/appUrls/index.ts',
 				templateFile: 'plop-templates/constant/append-appUrls.hbs',
-				// pattern: "// @plop - Please don't delete. Comments for automatic addition by plop."
-				pattern: /\/\/ @plop - Please don't delete. Comments for automatic addition by plop./,
+				pattern: APPEND_PATTERN,
+			},
+			{
+				type: 'append',
+				path: 'src/main.tsx',
+				templateFile: 'plop-templates/main/route.hbs',
+				pattern: APPEND_PATTERN_MAIN_ROUTE,
+			},
+			{
+				type: 'append',
+				path: 'src/main.tsx',
+				templateFile: 'plop-templates/main/import-page.hbs',
+				pattern: APPEND_PATTERN_MAIN_PAGE_IMPORT,
 			},
 		],
 	})

@@ -9,5 +9,6 @@ export default defineConfig({
 	publicDir: 'assets',
 	server: {
 		port: 3000,
+		host: true,
 	},
 })
