@@ -1,7 +1,9 @@
+import { DefaultLayout } from "@/components/layouts/DefaultLayout";
+
 export const HomeFeature = () => {
-	return (
-		<>
-			<h1>HomeFeature</h1>
-		</>
-	)
-}
+  return (
+    <DefaultLayout>
+      <h1>Hello, react_boilerplate</h1>
+    </DefaultLayout>
+  );
+};
