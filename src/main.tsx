@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { HomePage } from '@/pages/home'
 import { APP_URLS } from '@/constants/appUrls'
 import { CustomThemeProvider } from '@/theme'
 
+// @plop-main-page-import - Please don't delete. Comments for automatic addition by plop.
+import { HomePage } from '@/pages/home'
+
 const router = createBrowserRouter([
+	// @plop-main-route - Please don't delete. Comments for automatic addition by plop.
 	{
 		path: APP_URLS.HOME,
 		element: <HomePage />,
