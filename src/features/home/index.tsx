@@ -1,9 +1,9 @@
-import { DefaultLayout } from "@/components/layouts/DefaultLayout";
+import { Box, Heading } from '@chakra-ui/react'
 
 export const HomeFeature = () => {
-  return (
-    <DefaultLayout>
-      <h1>Hello, react_boilerplate</h1>
-    </DefaultLayout>
-  );
-};
+	return (
+		<Box>
+			<Heading>Hello, react_boilerplate</Heading>
+		</Box>
+	)
+}
