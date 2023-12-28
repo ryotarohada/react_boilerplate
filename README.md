@@ -10,7 +10,7 @@ We utilize Volta as a version management tool for Node.js and npm. Please instal
 
 [Volta documents](https://docs.volta.sh/guide/)
 
-- Node.js v18.18.2 (LTS as of 2023/10/15)
+- Node.js (Version is listed in package.json)
 - npm (version bundled with the above Node.js)
 
 ### Start the Development Server

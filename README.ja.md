@@ -10,7 +10,7 @@ Node.js および npm のバージョン管理ツールとして Volta を使用
 
 [Volta documents](https://docs.volta.sh/guide/)
 
-- Node.js v18.18.2 (2023/10/15 時点 LTS)
+- Node.js (バージョンは package.json に記載)
 - npm (上記 Node.js 付属バージョン)
 
 ### 開発サーバー起動
