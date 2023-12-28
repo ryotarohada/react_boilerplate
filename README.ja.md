@@ -63,9 +63,11 @@ StoryBook 上にて Chakra UI の component を確認することができます
 
 ## Features ディレクトリ
 
-このテンプレートでは`src/features` で機能(feature)ごとにディレクトリを分割する構成を取っています。
+このテンプレートでは `src/features` で機能(feature)ごとにディレクトリを分割する構成を取っています。
 
-必要に応じて構成を変えてください。
+単一の feature に依存する component や hook、util を作成する場合は `features/xxx/` に作成してください。
+
+例: `features/auth/components/SomeComponent` 、 `features/auth/hooks/useSomeHook` など。
 
 ## Plop
 
