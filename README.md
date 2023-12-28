@@ -63,7 +63,9 @@ You can check the Chakra UI component on StoryBook.
 
 In this template, the `src/features` directory divides directories for each feature (feature).
 
-Feel free to modify the structure as needed.
+If you create a component, hook, or util that depends on a single feature, create it in `features/xxx/`.
+
+For example: `features/auth/components/SomeComponent`, `features/auth/hooks/useSomeHook`, etc.
 
 ## Plop
 
