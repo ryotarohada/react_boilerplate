@@ -1,38 +1,36 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
-  "labels": ["renovate"],
-  "timezone": "Asia/Tokyo",
-  "dependencyDashboard": false,
-  "automergeSchedule": "after 5pm on friday",
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "matchPackagePatterns": ["eslint"],
-      "groupName": "eslint",
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "matchPackagePatterns": ["storybook"],
-      "groupName": "storybook",
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "matchPackagePatterns": ["chakra-ui"],
-      "groupName": "chakra-ui",
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "automerge": false
-    }
-  ]
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended"],
+	"labels": ["renovate"],
+	"timezone": "Asia/Tokyo",
+	"dependencyDashboard": false,
+	"automergeSchedule": "after 5pm on friday",
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"matchPackagePatterns": ["eslint"],
+			"groupName": "eslint",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"matchPackagePatterns": ["storybook"],
+			"groupName": "storybook",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"matchPackagePatterns": ["chakra-ui"],
+			"groupName": "chakra-ui",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["major"],
+			"automerge": false
+		}
+	]
 }

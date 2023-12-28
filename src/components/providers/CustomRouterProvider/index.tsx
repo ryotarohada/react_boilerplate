@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { APP_URLS } from '@/constants/appUrls'
+import { APP_URLS } from '@/constants'
 
 // @plop-route-import - Please don't delete. Comments for automatic addition by plop.
 import { HomePage } from '@/pages/home'
