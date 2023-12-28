@@ -1,24 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { APP_URLS } from '@/constants/appUrls'
-import { CustomThemeProvider } from '@/theme'
-
-// @plop-main-page-import - Please don't delete. Comments for automatic addition by plop.
-import { HomePage } from '@/pages/home'
-
-const router = createBrowserRouter([
-	// @plop-main-route - Please don't delete. Comments for automatic addition by plop.
-	{
-		path: APP_URLS.HOME,
-		element: <HomePage />,
-	},
-])
+import { CustomRouterProvider, CustomThemeProvider } from '@/components/providers'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
 		<CustomThemeProvider>
-			<RouterProvider router={router} />
+			<CustomRouterProvider />
 		</CustomThemeProvider>
 	</React.StrictMode>,
 )

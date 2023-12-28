@@ -1,21 +1,13 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
-import { CustomColorOptions } from '@/theme/colors'
-import { CustomComponentOptions } from '@/theme/components'
-import { CustomStyleOptions } from '@/theme/styles'
+import { extendTheme } from '@chakra-ui/react'
+import { customColorOptions } from '@/theme/colors'
+import { customComponentOptions } from '@/theme/components'
+import { customStyleOptions } from '@/theme/styles'
 import { customConfigOptions } from '@/theme/configs'
-
-type CustomThemeProviderProps = {
-	children: React.ReactNode
-}
 
 // https://chakra-ui.com/docs/styled-system/customize-theme
 export const theme = extendTheme({
-	colors: CustomColorOptions,
-	components: CustomComponentOptions,
-	styles: CustomStyleOptions,
+	colors: customColorOptions,
+	components: customComponentOptions,
+	styles: customStyleOptions,
 	config: customConfigOptions,
 })
-
-export function CustomThemeProvider({ children }: CustomThemeProviderProps) {
-	return <ChakraProvider theme={theme}>{children}</ChakraProvider>
-}
